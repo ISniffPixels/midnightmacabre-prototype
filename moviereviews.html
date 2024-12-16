@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Eczar:wght@400..800&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Rubik+Wet+Paint&display=swap" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+        <link href="styles.css" rel="stylesheet">
+        <title>MIDNIGHT MACABRE | MOVIE REVIEWS</title>
+        <link href="./css/styles.css" rel="stylesheet">
+        <script src="index.js" defer></script>
+    </head>
+
+    <body>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
+            <div class="container-fluid">
+                <img src="/images/vintageskull-550w.png"  alt="Logo" width="100" height="100" id="skull" class="d-inline-block align-text-top p-4">
+                <a class="navbar-brand text-uppercase rubik-wet-paint-regular me-5" href="https://www.youtube.com/watch?v=hKI5tdmA2tk" target="_blank">midnight macabre</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarText">
+                    <ul class="navbar-nav me-auto mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link fs-4" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fs-4 active" href="moviereviews.html">Movie Reviews</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fs-4" href="gallery.html">Gallery</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fs-4" href="about.html">About</a>
+                        </li>
+                    </ul>
+                    <div class="navbar-text fs-4 me-5">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+                            <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334q.002-.211-.006-.422A6.7 6.7 0 0 0 16 3.542a6.7 6.7 0 0 1-1.889.518 3.3 3.3 0 0 0 1.447-1.817 6.5 6.5 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.32 9.32 0 0 1-6.767-3.429 3.29 3.29 0 0 0 1.018 4.382A3.3 3.3 0 0 1 .64 6.575v.045a3.29 3.29 0 0 0 2.632 3.218 3.2 3.2 0 0 1-.865.115 3 3 0 0 1-.614-.057 3.28 3.28 0 0 0 3.067 2.277A6.6 6.6 0 0 1 .78 13.58a6 6 0 0 1-.78-.045A9.34 9.34 0 0 0 5.026 15" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-twitter-x" viewBox="0 0 16 16">
+                            <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-youtube" viewBox="0 0 16 16">
+                            <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                            <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="wrapper">
+            <container class="flex_container_2">
+                <section class="flex_img_section-2">
+                    <img src="./images/crimsonpeak.jpg" width="600" height="400" alt="movie banner" />
+                    <figcaption>Crimson Peak (2015)</figcaption>
+                </section>
+                <section class="flex_section_intro">
+                    <h3 class="movie_title">Crimson Peak</h3>
+                    <div class="author_post">
+                        <p>By Biff McGriff</p>
+                        <p class="postDate"></p>
+                    </div>
+
+                    <h3>A Gothic Romance with a Pleasant Twist</h3>
+
+                    <p>It's been a while since we've had a good gothic romance with all the trappings; bats, creepy houses, and an old-fashioned setting to boot. But that's what director and screenwriter Guillermo del Toro has given us with Crimson Peak, a film that he has described as “a love letter to monster movies.” Crimson Peak is the perfect blend of gothic romance and ghost story, set in a 19th century New England mansion where secrets lurk in every shadow. The story follows young socialite Edith Cushing (played by Mia Wasikowska), who falls madly in love with mysterious young stranger Thomas (played by Tom Hiddleston) after only having met him once before. He proposes marriage to her not long after they meet again, but there's something sinister beneath his surface...</p>
+
+                    <h3>The Art-Deco Visuals of Guillermo del Toro</h3>
+
+                    <p>Del Toro is one of the few filmmakers who can make a romance look truly unique. His use of colors and light is reminiscent of the early 20th century, a period known for its Art Deco movement, and many of his films have been influenced by this era. Del Toro has often used his films to channel the aesthetics and sensibilities of the past, representing art deco in a unique way that many people will easily recognize. He does this in Crimson Peak by using bold colors, geometric patterns, and warm tones. The film is beautifully lit, and the visual aesthetics of the film draw the viewer into the world of Crimson Peak. Del Toro doesn't just set the film in an era; he brings the whole environment to life. The set of Crimson Peak is also a large part of the film's art deco design. The filmmakers used an old Victorian mansion that was built in 1901 and had been abandoned since the 1960's. They wanted to use a real architectural space with high ceilings, wood floors, and columns in order to bring the scale of the house to life.</p>
+
+                    <h3>Crimson Peak is a Tim Burton Film</h3>
+
+                    <p>Crimson Peak is a gothic romance that has all the makings of a Tim Burton film. First of all, it was produced by Burton's company, which is also responsible for del Toro's previous films Pacific Rim (2013) and Pans Labyrinth (2006). Secondly, there are strong similarities in the way the romance is presented in both films. The protagonists of both Crimson Peak and Big Fish (2003) are socially awkward women who are easily misled by the men that they fall in love with. The visual style of the film also has a lot in common with Burton's work. Not only is the set heavily influenced by the architecture of the Victorian era, but it also features Burton's signature style: a dark, eerie, and somewhat ominous visual tone.</p>
+
+                    <h3>Guillermo del Toro's Signature Style</h3>
+
+                    <p>Del Toro has always loved the gothic genre, and in many of his films, one can find elements of the 19th century gothic romance. Films like the Devil's Backbone (2001) and Crimson Peak draw inspiration from the gothic romance novels of 19th century England, which typically feature a young woman falling in love with a mysterious and often wealthy man. The Devil's Backbone and the other gothic inspired films of del Toro are excellent examples of the gothic romance; they feature dark and eerie settings, a mysterious male character, and a young woman who has been emotionally scarred by her past. Del Toro's work is extremely visual, and many of his films are very much about the way that they are shot.</p>
+
+                    <h3>A Romance with a Nice Twist</h3>
+
+                    <p>Although Crimson Peak is a gothic romance, it still features a nice twist. Rather than the young woman being the one who is haunted by her past, it is the man who has a dark secret that he is trying to keep hidden. The film explores themes of betrayal and the dangers of falling in love with a person who you barely know. The protagonist, Edith, meets a mysterious young man named Thomas and falls madly in love with him. Little does she know that he is actually married and that he has come to her home to try and get her to sign away her fortune. Del Toro is an expert at crafting ominous visuals, and his films often feature an ominous tone. His films often have an impending sense of doom, and the viewer can almost feel the darkness and anxiety of the characters.</p>
+
+                    <h3>The Verdict</h3>
+
+                    <p>Crimson Peak is a film that will appeal to lovers of the gothic romance, as well as fans of ghost stories and haunted houses. The film features a strong female protagonist who is smart and independent, but it also has all of the visual elements that make the gothic romance such an enjoyable genre: a mysterious male protagonist, a creepy house, and a sense of impending doom. If you're looking for something a bit different, give Crimson Peak a chance.</p>
+
+                    <h3>Rating: 3.5 / 5</h3>
+                    <a class="back_top" href="#">BACK TO TOP</a>
+                </section>
+            </section>
+            <section class="flex_img_section-2">
+                <img src="./images/1922.jpg" width="600" height="400" alt="movie banner" />
+                <figcaption>1922 (2017)</figcaption>
+            </section>
+            <section class="flex_section_intro">
+                <h3 class="movie_title">1922</h3>
+                <div class="author_post">
+                    <p>By Biff McGriff</p>
+                    <p class="postDate_2"></p>
+                </div>
+
+                <h3>1922 A Stephen King Classic</h3>
+
+                <p>Maybe it's the time of year, maybe we've just been watching too many scary movies, but lately, there's been a lot of talk about Stephen King. There have been different adaptations of King's books and short stories popping up left and right. Perhaps this is because he is one of the best writers when it comes to creating a sense of creepiness and putting his characters in horrifying situations. That being said, most people are unfamiliar with just how many times Stephen King has had his work adapted into other mediums. Movies based on his novels or screenplays that he wrote directly for productions such as Netflix or Hulu are becoming more prevalent than ever before. One such production is 1922, a movie based on one of King's novellas. Here is our review of the movie</p>
+
+                <h3>What's 1922 About?</h3>
+
+                <p>1922 is based on a short story by Stephen King. It tells the story of a farmer who decides to murder his wife with the help of their manipulated teenage son, Henry, in order to keep her from selling her farmland to a pig farm and slaughterhouse company to start a business, and begin a new life in the city. The farmer, Wilfred, and his son must deal with the guilt of their actions as they try to cope day to day and try to resume their lives, while trying to deceive the law that is relentlessly investigating and looking into their horrific transgressions. The plot of the film closely follows that of the short story. The plot summary above says a lot about the main themes of the story, but it doesn't get you into the atmosphere. The plot of the story is, of course, important, but it's not everything. One of the things that make the story work is how it is written. 1922 is a very atmospheric story, and King does a great job of establishing a feeling of tension and unease throughout.</p>
+
+                <h3>The Cast and Crew</h3>
+
+                <p>The cast and crew that worked on the movie are an impressive group of people. Although it is not the most well-known movie, this production boasts some notable names. Actors like Thomas Jane (who starred in the Punisher movie and the show The Expanse) and Virginia Madsen (who starred in Sideways, among other films) are featured in the movie. Thomas Hunsberger directed the movie, and he has not worked on any other notable films. This movie is his only directing credit. Hunsberger also worked as a producer on the movie, so he had a hand in almost every aspect of the production process.</p>
+
+                <h3>Why You Should Watch</h3>
+
+                <p>There are many reasons why you should watch this film. The first is that it is an adaption of a Stephen King work. This alone is enough to pique the interest of many people. Frankly, King's work is always worth reading or watching. He is a fantastic writer and storyteller, and many of his stories are worth exploring. 1922 is a great example of this. Beyond that, the movie is fun to watch. There are some genuinely tense and exciting scenes, and it is a movie that gets the heart racing and blood pumping. The movie also does a good job of exploring some interesting themes. The main theme of the movie is the idea of getting what we wish for and then dealing with the consequences. This story explores the idea that greed can lead to terrible and irreversible things. Finally, the cast and crew of this movie make it worth watching. This is a fairly low-budget movie, but the production value is not lacking in any way. With an impressive cast and a great director at the helm, 1922 is well worth the time.</p>
+
+                <h3>The Verdict</h3>
+
+                <p>Overall, 1922 is a fantastic movie. It is an adaption of a great piece of literature, and it does the source material justice. It also features a great cast and crew and tells a compelling story. This film is worth watching for any fan of horror or Stephen King. It is also a good introduction to King's work for those who have never read his work before. When it comes to adaptations of King's work, 1922 is definitely worth a watch.</p>
+
+                <h3>Rating: 4.5 / 5</h3>
+                <a class="back_top" href="#">BACK TO TOP</a>
+            </section>
+        </section>
+    </container>
+</div>
+</body>
+
+</html>

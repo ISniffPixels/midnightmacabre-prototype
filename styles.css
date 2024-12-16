@@ -1,0 +1,217 @@
+/* CSS "RESET" TO HAVE MORE CONTROL OVER LAYOUT SPECS */
+* {
+  margin: 0;
+  padding: 0;
+  /* BOTTOM PROPERTY VALUE THAT IS COMMENTED OUT IS USED FOR GUIDANCE BETWEEN THE VARIOUS ELEMENT THROUGH OUT THE LAYOUTS. NOT NECESSARY */
+  /* outline: 1px solid gray; */
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  min-height: 100vh;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+.wrapper {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+body {
+  font-weight: 500;
+  line-height: 1.6;
+  min-height: 100vh;
+  background-color: #fff;
+}
+
+.rubik-wet-paint-regular {
+  font-family: "Rubik Wet Paint", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 3.5rem;
+}
+
+/* GROUPING SEVERAL CSS SELECTORS SO I DON'T HAVE TO REPEAT PROPERTY VALUES AS OFTEN */
+.navbar-brand,
+.navbar-text,
+.nav-link,
+.flex_section_intro > h3 {
+  color: #880808;
+}
+
+.navbar {
+  background-color: #fff;
+}
+
+.navbar-nav {
+  line-height: 100%;
+}
+
+.nav-link {
+  font-family: "Rubik Wet Paint", system-ui;
+  font-size: 1.5rem;
+}
+
+/* THE SELECTOR BELOW APPLIES EFFECTS TO EVERY ELEMENT TARGETED, EXCPET THE LAST-CHILD ELEMENT */
+svg:not(:last-child) {
+  margin-right: 1.5rem;
+}
+
+.nav-item {
+  padding: 0.6rem;
+}
+
+.nav-item:hover {
+  text-shadow: 0.6rem 0.6rem 0.9rem gray;
+}
+
+/* USING FLEXBOX FOR THE LAYOUT SINCE THE COMPLEXITY OF THE DESIGN IS LOW */
+.flex_container,
+.flex_container_about {
+  display: flex;
+  max-width: 125rem;
+  padding: 2rem;
+  gap: 2.5rem;
+}
+
+.flex_container_about {
+  flex-direction: column;
+}
+
+.flex_container_2 {
+  display: flex;
+  flex-flow: column;
+  max-width: 125rem;
+  padding: 2rem;
+  gap: 2.5rem;
+}
+
+.flex_img_section-1 {
+  flex: 20%;
+}
+
+.flex_img_section-2 {
+  margin: 0 auto;
+}
+
+.flex_section_intro {
+  flex: 80%;
+}
+
+.flex_section_intro p {
+  max-width: 60rem;
+}
+
+.flex_section_intro img {
+  margin-bottom: 3.5rem;
+}
+
+/* THE > OPERATOR (COMBINATOR) IN CSS REFERS TO ALL CHILDREN ELEMENTS INSIDE A PARENT ELEMENT. YOU CAN TARGET ALL CHILDREN FOR STYLING*/
+.flex_section_intro > h3 {
+  font-family: "Rubik Wet Paint", system-ui;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin: 2.5rem 0;
+}
+
+.flex_section_intro > p {
+  font-family: "Eczar", serif;
+  font-optical-sizing: auto;
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 1.6;
+  color: #000;
+}
+
+.flex_img_section-1 img {
+  box-shadow: 0.6rem 0.6rem 0.5rem gray;
+  margin-bottom: 1.5rem;
+}
+
+.flex_img_section-2 img {
+  box-shadow: 0.6rem 0.6rem 0.5rem gray;
+  margin: 4.5rem 0;
+}
+
+.flex_img_section-3 img {
+  margin: 0;
+}
+
+figcaption {
+  text-align: center;
+  color: #880808;
+}
+
+.author_post {
+  display: flex;
+  justify-content: center;
+  gap: 1.3rem;
+  font-family: "Eczar", serif;
+  font-optical-sizing: auto;
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 1.6;
+  color: #000;
+}
+
+.slider_title {
+  font-family: "Rubik Wet Paint", system-ui;
+  font-size: 3.2rem;
+  text-align: center;
+  text-transform: uppercase;
+  color: #880808;
+}
+
+.carousel {
+  border: 0.5rem inset #880808;
+}
+
+.movie_title {
+  text-align: center;
+}
+
+.back_top {
+  font-family: "Rubik Wet Paint", system-ui;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #880808;
+}
+
+/* MEDIA QUERIES THAT DYNAMICALLY CHANGE FONT SIZE AND OTHER PROPERTIES ONCE THE VIEWPORT REACHES CERTAIN WIDTH DIMENSIONS */
+@media screen and (max-width: 1200px) {
+  html {
+    font-size: 56.25%;
+  }
+}
+
+@media screen and (max-width: 1054px) {
+  .flex_container {
+    display: flex;
+    flex-flow: column;
+  }
+
+  .flex_img_section-1 {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+  }
+
+  .nav-item,
+  .navbar-text {
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+
+  svg {
+    margin-left: 2.5rem;
+  }
+}
